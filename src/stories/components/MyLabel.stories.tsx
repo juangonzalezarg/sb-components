@@ -6,9 +6,9 @@ export default {
     title: 'UI/MyLabel',
     component: MyLabel,
     argTypes: {
-        size: {control:'select'},
-        color: {control:'select'},
-        fontColor:{control:'color'}
+        size: { control: 'select' },
+        color: { control: 'select' },
+        fontColor: { control: 'color' }
     }
 } as ComponentMeta<typeof MyLabel>
 
@@ -23,7 +23,7 @@ Basic.args = {
 export const AllCaps = Template.bind({});
 AllCaps.args = {
     size: 'normal',
-    allCaps: true 
+    allCaps: true
 }
 
 export const Secondary = Template.bind({});
@@ -35,7 +35,7 @@ Secondary.args = {
 export const Tertiary = Template.bind({});
 Tertiary.args = {
     size: 'normal',
-    color: 'tertiary' 
+    color: 'tertiary'
 }
 
 export const CustomFontColor = Template.bind({});
@@ -43,3 +43,11 @@ CustomFontColor.args = {
     size: 'normal',
     fontColor: '#5517ac',
 }
+
+export const CustomBackgroundColor = Template.bind({});
+CustomBackgroundColor.args = {
+    size: 'normal',
+    fontColor: '#eeeeee',
+    backgroundColor: '#000000',
+}
+
